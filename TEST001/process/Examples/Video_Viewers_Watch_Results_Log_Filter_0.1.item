@@ -3,7 +3,7 @@
     <contextParameter comment="path of the log file to be downloaded from Dropbox" name="parameter_download_path" prompt="parameter_download_path?" promptNeeded="false" type="id_String" value="&quot;/StreamingResultsLog.csv&quot;"/>
     <contextParameter comment="percentage of movie watched above which royalties are due" name="parameter_percent_to_pay_views" prompt="parameter_percent_to_pay_views?" promptNeeded="false" type="id_Float" value="0.2"/>
     <contextParameter comment="path to upload the result file to on Dropbox" name="parameter_upload_path" prompt="parameter_upload_path?" promptNeeded="false" type="id_String" value="&quot;/StreamingResultsLog_FilteredRecords.csv&quot;"/>
-    <contextParameter comment="" name="connection_dropbox_access_token" prompt="connection_dropbox_access_token?" promptNeeded="false" repositoryContextId="_UmAHsH-UEeSh_srZ_0iReQ" type="id_String" value=""/>
+    <contextParameter comment="" name="connection_dropbox_access_token" prompt="connection_dropbox_access_token?" promptNeeded="false" repositoryContextId="_UmAHsH-UEeSh_srZ_0iReQ" type="id_String" value="VGbBqWU8GsAAAAAAAAAAHPymltU0kdd-k6WO7tDzltIOQKgz4dN6V0wsc90WrL8Y"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -32,8 +32,6 @@
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -50,8 +48,8 @@
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
@@ -61,7 +59,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/TalendStudio/Talend-Studio-20171005_1932-V6.5.0SNAPSHOT/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -69,7 +67,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
     <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
@@ -480,13 +478,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e83da567-5f91-4087-9a2b-79e5749be2b0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>h3eKmdoXbMidhUT7OKyHIBAaNKJOdhEJFi70qS6YqGsSTnEzXx1GPVdjSxsFz4LkePIFGUS3q+cY
-lRZwhrTg2Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4d6f6f54-cfd3-4c90-a5be-e9e6a286b2f8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1r1FX3yPMumrxdzmghjxKViXsuEx+TLo6R20NaAEXGh+vTkmv0YvMMt3t/UWxMlmvAMmeEMXYeFM
-mU8rq9+vwA==</DigestValue></Reference></SignedInfo><SignatureValue>jGW5FxjB88enLp2VqfqEXsHAD/NhdhgAeqpzT0w84R6pCpiV+6cxc2rgCzsBEDANfAkFFBwsHMUT
-Kag4sL7nA5ZMwY9HYAGk0qqm4JuBIcWFZzxUcWtV6+KmeJPfc/fe2F+Z1c7U10gEm+WHvySeUySF
-uHNwo+ZfaX9YnwE1Cytifzze3d0ZsmckxYH+VHIcqMngvVQZ9tjcmOEEZX2+SIZvto7MsjZ/Zk4o
-eqF4zZhR1iVKIaMsU9jl3ul1eBZHWaZ21RgzqgwqyivhOSMom8yNt9eVlP8bEdwYmRmXGg4+sNJQ
-iYoROT7w3Tx6GwnsmEKWB67rA0zTiTMZAmReiQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c34c7b2-39d9-40a0-a7c9-a2f42091b146"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4mCeNq8sXC30txmh4exOWLXChURdpS96UZ9N49aRMw09MmicgwP1G1oXu+SII/p65N9lty9UPqox
+1Gdt/SHsfw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7b788801-f36c-4e20-b312-1d0973eb8921"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oVftKfGiLxIj9vpW/kyh0yhC9ctq9jHPMGIt2G5P4RRsn/cg9E0Xw2WnEuUTnJXWbglgzwIGzji3
+8rxYWuA30Q==</DigestValue></Reference></SignedInfo><SignatureValue>F5UQl8Zg7lTqM/thfityor5fpQ6608E+gqHR8xcKmg4ygXihZW37gqf0X512lgoSi0HxSHIQxq2M
+FXJ6aYRrTq1Uky0Lvv0Clj/Hiere29oYGRMR0CFVjQgVld3+YO4xZXcgtmGSMVzx7bcurUjglqk0
+LQq2uqmDD5XLve95ta7ZWjbdhAWjcZwNW30gn4Fvdg4q+95hOhGnC0SZ9tsxMzBm/+ZX14JenavB
+ZvddkqmKi9pbmcqNJk1VbP0guN2gab7k8UWdZBNZ4+35jLoreJNaN8xKfJCHQKhZogoe+BHUO6n0
+vtUFKnalTveJZ38YW48ZpRY5HM1U04bzbyShsA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -510,4 +508,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4d6f6f54-cfd3-4c90-a5be-e9e6a286b2f8" Target="#_e83da567-5f91-4087-9a2b-79e5749be2b0"><Timestamp>2019-02-10 18:14:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7b788801-f36c-4e20-b312-1d0973eb8921" Target="#_8c34c7b2-39d9-40a0-a7c9-a2f42091b146"><Timestamp>2019-02-10 18:31:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
