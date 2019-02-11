@@ -116,35 +116,40 @@
     <routinesParameter id="_PESjcCYYEeW5gZVXtfxI4A" name="IpaasFileUtil"/>
     <routinesParameter id="_kGMlYLflEee7_fd0DYdYrA" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tDropboxGet" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_2"/>
+  <node componentName="tDropboxPut" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxPut_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="ACCESS_TOKEN" value="&quot;VGbBqWU8GsAAAAAAAAAAIUGgNLbieuoyaGS01QyxhXVTETuDrSOe5mFydLPPwaal&quot;"/>
     <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8087"/>
-    <elementParameter field="TEXT" name="PATH" value="&quot;/AA.csv&quot;"/>
-    <elementParameter field="CHECK" name="STORE_TO_LOCAL" value="false"/>
-    <elementParameter field="FILE" name="OUTPUT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FILE_PATH" value="&quot;/cc.csv&quot;"/>
+    <elementParameter field="RADIO" name="ADD_MODE" value="true"/>
+    <elementParameter field="RADIO" name="FORCE_MODE" value="false"/>
+    <elementParameter field="RADIO" name="UPDATE_MODE" value="false"/>
+    <elementParameter field="TEXT" name="REVISION" show="false" value="&quot;&quot;"/>
+    <elementParameter field="RADIO" name="READ_CONTENT_FROM_INPUT" value="true"/>
+    <elementParameter field="RADIO" name="UPLOAD_LOCAL_FILE" value="false"/>
+    <elementParameter field="RADIO" name="EXPOSE_OUTPUT_STREAM" value="false"/>
+    <elementParameter field="FILE" name="LOCAL_FILE_PATH" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDropboxGet_2">
-      <column defaultValue="" key="false" length="0" name="fileName" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tDropboxPut_1">
       <column defaultValue="" key="false" length="0" name="content" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
     </metadata>
   </node>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxGet_2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxPut_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_969fee93-3af0-4289-aa5d-691c16ad8ba8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3hhb5+Xu5nTSdKwUqhhZy30jmMEuhRej7aKOKrLx2mW7wpS4y84H9LwKWOxAh2qsCEOWieY/Bk3m
-L7Ee1VNUeQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_67dccec6-ced8-498e-ac88-0725fee71593"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WiXc+C9U1pmq5CE0SgTq3tNE7cshqo2f9Zk9KYXwWL+5wGjRplQtQ16xQn9cXTw++8GPwAsKHbEA
-lqX8bcxqCw==</DigestValue></Reference></SignedInfo><SignatureValue>VBMwqZ/2hStFKyuJCD8edl0rcxLJCcDls6t8QBbXYwmJK8l645HFE2Q4Fe/CbvCjUySX5Bt0CB6/
-bgVYTqTqDXzW7HE7/dTHBuHGRU+bw3Fdyk2nV++6ZmNm0A9ZJ+m6YBW8GkVcSSMAsqR6uPqvaLIs
-xg+pMB11nUDoaIl/rP87DHKQ0bwww7t8UxNUR/nHJf9woCFRhOzINu3FfNS4WQ1ZxwzWpSSSC9tl
-IaC3gUkKBKgTb49Q/kDbJJ2kVsIX74Mx2DMvUmTfvBJdF76mjFE2AOXS983CLgF7bROf+AetRKuQ
-Woy2OQMHzKTgJB2I/fBcafronT/J29SRl0b51g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c205ce94-b8b4-492b-bb10-f1ec550e2e4c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D+t9K7UK/44hEtVYGr7mePk5nPMYgIFgoC5qhehtO+rMCpdtXFWx8E/AihEHR8Ai83n5KvmYzEQj
+Fa1sjusIXQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_76b88864-cc01-4c44-b257-bc52b0ca3701"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tgj91FlI6JD/PoSiQaltw6mzrgtZjhKXFlRLlMiFkzXTJYxUYfVEwytdiiXF0vYAEsriJurI31ne
+ecNJqQBofA==</DigestValue></Reference></SignedInfo><SignatureValue>Qhc/OzkeYq8ZqkJeUMVN3xX8lA8G3/VS/6ZseAx111Xg/Gh4njOMRzzBsyIu4LeNWFOO7Ss32ljQ
+SMKtKlZ3X8oOR/FuEUmZ4Sn/GX/mN0JYDk/HXpPAFPr3HmXWNOsSDAF2JSaNix9OtsCrjHBIh7OE
+4iu3aPsmh6nmrsAxIgN3ULut6HpEImI24zJ2QyeLkExc9eEPk1v2rAC375SAYXX5igg/BFhadXC1
+U/r8WxANApv6L5F1L3s7RCb2FHS5mFm+yZ3R8Ft3wpTR32VGmZd6+HsUKLn6PXdFHnn8DlSDUK2x
+O76mjAhdy79dInt3fHuFMDaJRIqhrtVSMWeTMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -168,4 +173,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_67dccec6-ced8-498e-ac88-0725fee71593" Target="#_969fee93-3af0-4289-aa5d-691c16ad8ba8"><Timestamp>2019-02-11 04:18:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_76b88864-cc01-4c44-b257-bc52b0ca3701" Target="#_c205ce94-b8b4-492b-bb10-f1ec550e2e4c"><Timestamp>2019-02-11 04:20:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
