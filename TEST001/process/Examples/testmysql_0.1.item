@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="parameter_upload_path" prompt="parameter_upload_path?" promptNeeded="false" type="id_String" value="&quot;/MySqlOutput001.csv&quot;"/>
+    <contextParameter comment="" name="token" prompt="token?" promptNeeded="false" type="id_String" value="&quot;VGbBqWU8GsAAAAAAAAAAHPymltU0kdd-k6WO7tDzltIOQKgz4dN6V0wsc90WrL8Y&quot;"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -189,12 +190,23 @@
       <column key="false" length="0" name="name" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tDropboxConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxConnection_1"/>
+    <elementParameter field="TEXT" name="ACCESS_TOKEN" value="context.token"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;192.20.1.160&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="1090"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDropboxConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDropboxConnection_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
@@ -206,13 +218,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74abeab9-e356-4043-ad16-b711f708cedc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xCMl8AIVRdBegiTWg6VzpBdWGwV39Sh2ICGmjopasVCYc7XwlV6hVGLGElSqwJIUWruGUspkGGp+
-GTAL5meccg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14158fba-7270-407f-931f-ded2a05d6c00"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CWjUSi/zajAhRQ6PZvoohE5QVgLF/wnhbIgWnKdUXopDtt/0XeFFBL748GzIoiFnaaALXLCq4BgT
-R5NAjkfs4w==</DigestValue></Reference></SignedInfo><SignatureValue>IYDf64tbh7V5cPNHK2XEpcxkPd32ikEgd3xS1t/XKToTtIHadOEy71Qx/x9qDvRwTLOVLOTOZfgF
-/SZRmyWa5v4wwyDsMGJCmt5fO6dRCFqXeCaJGqEqiuTs0FdyIM+g9mbngAErcCIPe3UVT1K9R0Vc
-JG7We7ieF4o6nnEeRrazmoDZ+5PCW8+qlVOhxnJuzhttDojsNMujZvc/yqoGgrBZL3zg9I4li63g
-pxfTrrafKxnsRn57lugZpVHQ2rde+UKxju2NIiESebs/Rf/Se22v5PM9mOtiBbPsZrudUPrdqTW4
-h1GMvy6HNwKGJCVLdJRhj8IqwWT4ESXHJlEk4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDropboxConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c284324-c0ae-455f-80bb-e6983622df7e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pEBfPQRS8hqT1wBqrg+Tj4kwgsb0ccYjuQ1dDfD3tJcUX2YIY2LyK/NjAa5nQ/8Bh0b6kwQJXK7W
+GM40ent5ww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_34173323-aa25-4cae-bb2d-11a3ca172411"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n/IAjwnh+r96peFnNbmou2IfnyUJzNgci+1kzpy+kD48QNxPswKIXnwzFeefzxb3OnDUyHZHtoAD
+Bgnq8ahp6A==</DigestValue></Reference></SignedInfo><SignatureValue>M+5zMqr9RwiEeJaOd3jFGZee3c4TsO7C50sDnmXKYl34q7m6NI1hIxRRwwWQewuNn21BNdBqu5g7
+M77rWlJFOMO7NH+4p5046UPJMtYb/WZ8oZ34cW9S9LxWII+a43BriGqkESrEEu03C+XSu/gnr7i7
+dGZadUHN6Zhk/borwSdfB7iFBYUv0cX11dz5JAZD/JyEB5jLbXtm65p2TN1LSXY2sRG/2tYC9t8R
+92YLFlbU+rZWH3fr7q58KraAAEueJ5sbdT9jr7B9P8eynPFBUyjfSPUaYg/wvDFIA/Q98PLvpV2B
+HtXBM0CrrtljmzyCO6vd22iLDlN7umYyR3lZeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -236,4 +253,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14158fba-7270-407f-931f-ded2a05d6c00" Target="#_74abeab9-e356-4043-ad16-b711f708cedc"><Timestamp>2019-02-18 05:12:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_34173323-aa25-4cae-bb2d-11a3ca172411" Target="#_2c284324-c0ae-455f-80bb-e6983622df7e"><Timestamp>2019-02-18 05:19:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
