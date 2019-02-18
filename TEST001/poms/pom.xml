@@ -18,7 +18,7 @@
     <module>jobs/process/Examples/getweather_0.1</module>
     <module>jobs/process/Examples/testdropbox_0.1</module>
     <module>jobs/process/Examples/asdfas_0.1</module>
-    <module>jobs/process/Examples/testmysql_0.1</module>
+    <module>jobs/process/Examples/testmysqlandropbox_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST001</talend.project.name>
